@@ -17,7 +17,7 @@ class Transfer
   end 
   
   def execute_transaction(acct1, acct2)
-    
+    if sender.
   end 
   
   
