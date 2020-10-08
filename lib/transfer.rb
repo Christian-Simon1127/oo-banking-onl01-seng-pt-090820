@@ -16,8 +16,14 @@ class Transfer
     end    
   end 
   
-  def execute_transaction(acct1, acct2)
-    if sender.
+  def execute_transaction
+    if sender.balance < @amount 
+      false 
+    else 
+      sender.balance -= @amount
+      receiver.balance += @amount
+      true
+    end
   end 
   
   
